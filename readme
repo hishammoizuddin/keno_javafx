@@ -1,2 +1,13 @@
 KENO JAVA FX
+
 implementation the popular casino and state lottery game, Keno, using Java FX.
+
+KENO is a popular gambling game offered in many modern casinos and also offered as a
+game in many state lotteries.
+Players wager by choosing a set amount of numbers( pick 2 numbers, pick 10 numbers,
+etc.) ranging from 1 to 80. After all players have made their wagers and picked their
+numbers, twenty numbers are drawn at random, between 1 and 80 with no duplicates.
+Players win by matching a set amount of their numbers to the numbers that are
+randomly drawn.
+The amount of numbers drawn and the amount of numbers matched that players are
+allowed to wager on will differ from casino to casino and state lottery to state lottery.
