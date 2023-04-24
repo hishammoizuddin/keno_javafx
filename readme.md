@@ -20,15 +20,4 @@ This project is built using the following technologies:
 - **JavaFX**: A powerful Java library for creating desktop applications with rich graphical user interfaces.
 - **Maven**: A build automation and dependency management tool that simplifies project configuration and management.
 
-## Installation and Running the Project
-
-Follow the steps below to install and run the KENO application on your local machine:
-
-### Prerequisites
-
-Ensure that you have the following software installed on your system:
-
-1. **Java Development Kit (JDK)**: Version 11 or higher is required. You can download it from the [official website](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
-2. **Maven**: Version 3.6.0 or higher is required. Download and install it from the [official website](https://maven.apache.org/download.cgi).
-
 
