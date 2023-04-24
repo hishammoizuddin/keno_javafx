@@ -1,7 +1,4 @@
-// CS 342 Project 2 - KENO 
-// Partners:
-// Mohammed Hisham Moizuddin | UIN : 650344339, netID : mmoizu2
-// Kevin Savath | UIN : 668759935, netID : ksavat2
+// Mohammed Hisham Moizuddin
 
 import javafx.application.Application;
 import javafx.collections.ObservableList;
@@ -115,70 +112,85 @@ public class JavaFXTemplate extends Application {
 	}
 	
 	private Scene menuMaker() {
-		borderPaneMenu = new BorderPane();
-		buttonPlay = new Button("Play");
-		buttonRules = new Button("Rules");
-		buttonWinnings = new Button("Odds to Win");
-		buttonQuit = new Button("Quit");
-		
-		textRules = new TextArea(rulesString);
-		textRules.setWrapText(true);
-		textWinnings = new TextArea(oddsString);
-		
-		textWinnings.setWrapText(true);
-		
-		welcomeText.setDisable(true);
-		
-		buttonPlay.setOnAction(e->switchScenes(sceneGame));
-		
-		buttonRules.setOnAction(e-> {
-			textRules.setDisable(true);
-			borderPaneMenu.setCenter(textRules);
-		});
-		
-		buttonWinnings.setOnAction(e-> {
-			textWinnings.setDisable(true);
-			borderPaneMenu.setCenter(textWinnings);
-		});
-		
-		
-		buttonQuit.setOnAction(e->System.exit(0));	
-		borderPaneMenu.setStyle("-fx-font-family: SansSerif;");
-		hboxMenu = new HBox(10, buttonPlay,buttonRules,buttonWinnings,buttonQuit);
-		hboxMenu.setAlignment(Pos.CENTER);
-		borderPaneMenu.setTop(hboxMenu);
-		borderPaneMenu.setCenter(welcomeText);
-		
-		sceneMenu = new Scene(borderPaneMenu, 600, 600);
-		
-		return sceneMenu;
+	    borderPaneMenu = new BorderPane();
+	    buttonPlay = new Button("Play");
+	    buttonRules = new Button("Rules");
+	    buttonWinnings = new Button("Odds to Win");
+	    buttonQuit = new Button("Quit");
+
+	    buttonPlay.setStyle("-fx-font-size: 14pt; -fx-background-color: #42a5f5; -fx-text-fill: white; -fx-font-family: 'Comic Sans MS';");
+	    buttonRules.setStyle("-fx-font-size: 14pt; -fx-background-color: #42a5f5; -fx-text-fill: white; -fx-font-family: 'Comic Sans MS';");
+	    buttonWinnings.setStyle("-fx-font-size: 14pt; -fx-background-color: #42a5f5; -fx-text-fill: white; -fx-font-family: 'Comic Sans MS';");
+	    buttonQuit.setStyle("-fx-font-size: 14pt; -fx-background-color: #42a5f5; -fx-text-fill: white; -fx-font-family: 'Comic Sans MS';");
+
+	    textRules = new TextArea(rulesString);
+	    textRules.setWrapText(true);
+	    textWinnings = new TextArea(oddsString);
+
+	    textWinnings.setWrapText(true);
+
+	    welcomeText.setDisable(true);
+	    welcomeText.setStyle("-fx-font-family: 'Comic Sans MS'; -fx-font-size: 18pt; -fx-text-alignment: center;");
+
+	    buttonPlay.setOnAction(e -> switchScenes(sceneGame));
+
+	    buttonRules.setOnAction(e -> {
+	        textRules.setDisable(true);
+	        borderPaneMenu.setCenter(textRules);
+	    });
+
+	    buttonWinnings.setOnAction(e -> {
+	        textWinnings.setDisable(true);
+	        borderPaneMenu.setCenter(textWinnings);
+	    });
+
+	    buttonQuit.setOnAction(e -> System.exit(0));
+	    borderPaneMenu.setStyle("-fx-font-family: 'Comic Sans MS'; -fx-background-color: #e1f5fe;");
+	    hboxMenu = new HBox(10, buttonPlay, buttonRules, buttonWinnings, buttonQuit);
+	    hboxMenu.setAlignment(Pos.CENTER);
+	    borderPaneMenu.setTop(hboxMenu);
+	    borderPaneMenu.setCenter(welcomeText);
+
+	    sceneMenu = new Scene(borderPaneMenu, 600, 600);
+
+	    return sceneMenu;
 	}
+
 	
 	private Scene gameMaker() {
-		buttonBack = new Button("Back");
-		buttonRules = new Button("Rules");
-		buttonWinnings = new Button("Odds to Win");
-		buttonLook = new Button("New Look");
-		borderPaneGame = new BorderPane();
+	    buttonBack = new Button("Back");
+	    buttonRules = new Button("Rules");
+	    buttonWinnings = new Button("Odds to Win");
+	    buttonLook = new Button("New Look");
+	    borderPaneGame = new BorderPane();
 
-		textRules = new TextArea(rulesString);
-		textWinnings = new TextArea(oddsString);
-	
-		buttonBack.setOnAction(e->switchScenes(sceneMenu));
+	    textRules = new TextArea(rulesString);
+	    textWinnings = new TextArea(oddsString);
 
-		buttonRules.setOnAction(e-> {
-			textRules.setDisable(true);
-			borderPaneGame.setCenter(textRules);
-		});
-		
-		buttonWinnings.setOnAction(e-> {
-			textWinnings.setDisable(true);
-			borderPaneGame.setCenter(textWinnings);
-		});
-	
-		buttonLook.setOnAction(e-> {
-			borderPaneGame = newLook(borderPaneGame);
-		});
+	    buttonBack.setStyle("-fx-font-size: 14pt; -fx-background-color: #42a5f5; -fx-text-fill: white; -fx-font-family: 'Comic Sans MS';");
+	    buttonRules.setStyle("-fx-font-size: 14pt; -fx-background-color: #42a5f5; -fx-text-fill: white; -fx-font-family: 'Comic Sans MS';");
+	    buttonWinnings.setStyle("-fx-font-size: 14pt; -fx-background-color: #42a5f5; -fx-text-fill: white; -fx-font-family: 'Comic Sans MS';");
+	    buttonLook.setStyle("-fx-font-size: 14pt; -fx-background-color: #42a5f5; -fx-text-fill: white; -fx-font-family: 'Comic Sans MS';");
+
+	    spotLabel.setStyle("-fx-font-size: 18pt; -fx-font-family: 'Comic Sans MS';");
+	    drawingsLabel.setStyle("-fx-font-size: 18pt; -fx-font-family: 'Comic Sans MS';");
+	    OverallScore.setStyle("-fx-font-size: 18pt; -fx-font-family: 'Comic Sans MS';");
+
+	    buttonBack.setOnAction(e -> switchScenes(sceneMenu));
+
+	    buttonRules.setOnAction(e -> {
+	        textRules.setDisable(true);
+	        borderPaneGame.setCenter(textRules);
+	    });
+
+	    buttonWinnings.setOnAction(e -> {
+	        textWinnings.setDisable(true);
+	        borderPaneGame.setCenter(textWinnings);
+	    });
+
+	    buttonLook.setOnAction(e -> {
+	        borderPaneGame = newLook(borderPaneGame);
+	    });
 		
 		returnSpots = new EventHandler<ActionEvent>() {
 			@Override
@@ -339,11 +351,11 @@ public class JavaFXTemplate extends Application {
 		gridPane.setAlignment(Pos.CENTER);
 		vboxGame.setAlignment(Pos.CENTER);
 
-		borderPaneGame.setStyle("-fx-font-family: SansSerif;");
-		borderPaneGame.setTop(vboxGame);
-		borderPaneGame.setCenter(gridPane);
-		sceneGame = new Scene(borderPaneGame, 600,600);
-		return sceneGame;
+	    borderPaneGame.setStyle("-fx-font-family: 'Comic Sans MS'; -fx-background-color: #e1f5fe;");
+	    borderPaneGame.setTop(vboxGame);
+	    borderPaneGame.setCenter(gridPane);
+	    sceneGame = new Scene(borderPaneGame, 600,600);
+	    return sceneGame;
 	}
 	
 	// to switch scenes
