@@ -2,6 +2,10 @@
 
 KENO is a simple, user-friendly JavaFX GUI application that allows users to play the classic KENO game. It is built using Java and JavaFX, featuring an interactive and visually appealing user interface.
 
+
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/78191578/233937658-434fe075-d82a-442d-81b5-f088e082b6d2.gif)
+
+
 ##  Features
 
 - Play the classic KENO game with a visually engaging GUI.
@@ -15,14 +19,3 @@ This project is built using the following technologies:
 - **Java**: The core programming language used for implementing the game logic and the application.
 - **JavaFX**: A powerful Java library for creating desktop applications with rich graphical user interfaces.
 - **Maven**: A build automation and dependency management tool that simplifies project configuration and management.
-
-## Prerequisites
-
-To run this project, you need the following software installed on your system:
-
-- Java Development Kit (JDK) 11 or higher
-- Maven 3.6.0 or higher
-
-## Building and Running the Project
-
-1. Clone the repository to your local machine.
