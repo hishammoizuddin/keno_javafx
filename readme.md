@@ -3,7 +3,7 @@
 KENO is a simple, user-friendly JavaFX GUI application that allows users to play the classic KENO game. It is built using Java and JavaFX, featuring an interactive and visually appealing user interface.
 
 
-<img src="https://user-images.githubusercontent.com/78191578/233937658-434fe075-d82a-442d-81b5-f088e082b6d2.gif" width=70% height=70%>
+<img src="https://user-images.githubusercontent.com/78191578/233937658-434fe075-d82a-442d-81b5-f088e082b6d2.gif" width=60% height=60%>
 
 
 ##  Features
