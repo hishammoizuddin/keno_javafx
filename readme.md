@@ -20,4 +20,6 @@ This project is built using the following technologies:
 - **JavaFX**: A powerful Java library for creating desktop applications with rich graphical user interfaces.
 - **Maven**: A build automation and dependency management tool that simplifies project configuration and management.
 
-
+### Team
+#### Mohammed Hisham Moizuddin
+#### Kevin Savath
