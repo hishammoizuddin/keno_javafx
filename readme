@@ -1,13 +1,28 @@
-KENO JAVA FX
+# KENO - JavaFX GUI Application
 
-implementation the popular casino and state lottery game, Keno, using Java FX.
+KENO is a simple, user-friendly JavaFX GUI application that allows users to play the classic KENO game. It is built using Java and JavaFX, featuring an interactive and visually appealing user interface.
 
-KENO is a popular gambling game offered in many modern casinos and also offered as a
-game in many state lotteries.
-Players wager by choosing a set amount of numbers( pick 2 numbers, pick 10 numbers,
-etc.) ranging from 1 to 80. After all players have made their wagers and picked their
-numbers, twenty numbers are drawn at random, between 1 and 80 with no duplicates.
-Players win by matching a set amount of their numbers to the numbers that are
-randomly drawn.
-The amount of numbers drawn and the amount of numbers matched that players are
-allowed to wager on will differ from casino to casino and state lottery to state lottery.
+## Features
+
+- Play the classic KENO game with a visually engaging GUI.
+- Supports custom user bets and game configurations.
+- User-friendly design for easy navigation and gameplay.
+
+## Technologies
+
+This project is built using the following technologies:
+
+- **Java**: The core programming language used for implementing the game logic and the application.
+- **JavaFX**: A powerful Java library for creating desktop applications with rich graphical user interfaces.
+- **Maven**: A build automation and dependency management tool that simplifies project configuration and management.
+
+## Prerequisites
+
+To run this project, you need the following software installed on your system:
+
+- Java Development Kit (JDK) 11 or higher
+- Maven 3.6.0 or higher
+
+## Building and Running the Project
+
+1. Clone the repository to your local machine.
